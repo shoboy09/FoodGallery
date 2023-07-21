@@ -1,0 +1,203 @@
+.hello{
+    color: red;
+    font-size: 10rem;
+    background-color: blue;
+}
+
+.content-container {
+  width: 80%;
+  overflow-y: auto;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+.home-content-container {
+  display: block;
+  background-image: url("/assets/img/people-eating.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(100, 100, 100);
+  background-blend-mode: multiply;
+}
+
+.home-header-container {
+  background-image: url("/assets/img/bg=img1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: grey;
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.slogan-container {
+  width: 80%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  color: white;
+  font-weight: 800;
+}
+
+.slogan-1 {
+  font-size: 4rem;
+}
+
+.slogan-2 {
+  font-size: 2.5rem;
+}
+
+.button-container {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-container,
+.reserve-container {
+  width: 45%;
+}
+
+.contact-container button {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background-color: rgb(233, 143, 43);
+  border: none;
+  color: white;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.contact-container button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(233, 143, 43);
+  transition: all ease-in-out 0.1s;
+}
+
+.reserve-container button {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background-color: rgb(43, 40, 37);
+  border: none;
+  color: white;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.reserve-container button:hover {
+  cursor: pointer;
+  background-color: rgb(233, 143, 43);
+  color: white;
+  transition: all ease-in-out 0.1s;
+}
+
+.home-about-us-container {
+  background-color: rgb(251, 243, 234);
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.home-about-us-div-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.home-about-us-label-1 {
+  font-size: 2rem;
+  color: rgb(233, 143, 43);
+}
+
+.home-about-us-label-2 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.home-about-us-label-3 {
+  font-size: 2rem;
+  color: rgb(156, 156, 156);
+}
+
+.home-about-us-div-2 {
+  width: 60%;
+}
+
+.home-about-us-div-2 p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(39, 39, 39);
+}
+
+.home-services-container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.services-div-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-label-1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+}
+
+.services-label-2 {
+  font-size: 1.8rem;
+  color: rgb(179, 179, 179);
+}
+
+.services-div-2 {
+  display: flex;
+  justify-content: space-evenly;
+  height: 40%;
+  width: 80%;
+  background-color: transparent;
+}
+
+.home-service {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.home-service i {
+  font-size: 5rem;
+  color: white;
+}
+
+.home-service label {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+}
