@@ -1,11 +1,5 @@
-.hello{
-    color: red;
-    font-size: 10rem;
-    background-color: blue;
-}
-
 .content-container {
-  width: 80%;
+  width: 100%;
   overflow-y: auto;
   opacity: 0;
   transform: translateY(-50px);
@@ -14,7 +8,7 @@
 
 .home-content-container {
   display: block;
-  background-image: url("/assets/img/people-eating.jpg");
+  background-image: var(--people-eating-image);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgb(100, 100, 100);
@@ -22,7 +16,7 @@
 }
 
 .home-header-container {
-  background-image: url("/assets/img/bg=img1.jpg");
+  background-image: var(--bg-img1-image);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: grey;
