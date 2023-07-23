@@ -1,0 +1,350 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'base/css/menu.css' %}">
+
+        <div class="content-container menu-content-container">
+            {% include 'navbar.html' %}
+            <div class="menu-header-container">
+                <div class="title">
+                    <label class="title-1">OUR MENU</br></label>
+                    <label class="title-2">SELECT MENU BELOW</label>
+                </div>
+                <div class="menu-category-container">
+                    <div class="menu-category coffee-menu-category">
+                        <div class="icon-div">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <div class="menu-name">
+                            <label>COFFEE</label>
+                        </div>
+                    </div>
+                    <div class="menu-category lunch-menu-category">
+                        <div class="icon-div">
+                            <i class="fa-solid fa-burger"></i>
+                        </div>
+                        <div class="menu-name">
+                            <label>LUNCH</label>
+                        </div>
+                    </div>
+                    <div class="menu-category dinner-menu-category">
+                        <div class="icon-div">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <div class="menu-name">
+                            <label>DINNER</label>
+                        </div>
+                    </div>
+                    <div class="menu-category drinks-menu-category">
+                        <div class="icon-div">
+                            <i class="fa-solid fa-beer-mug-empty"></i>
+                        </div>
+                        <div class="menu-name">
+                            <label>DRINKS</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-container">
+                <div class="coffee-category">
+                    <div class="espresso-div">
+                        <div class="espresso">
+                            <label>ESPRESSO</label>
+                        </div>
+                        <div class="espresso-items-div">
+                            <div class="espresso-item">
+                                <div class="name">
+                                    <label>Cappucino</label>
+                                </div>
+                                <div class="price">
+                                    <label>4.00</label>
+                                </div>
+                            </div>
+                            <div class="espresso-item">
+                                <div class="name">
+                                    <label>Mocha</label>
+                                </div>
+                                <div class="price">
+                                    <label>3.75</label>
+                                </div>
+                            </div>
+                            <div class="espresso-item">
+                                <div class="name">
+                                    <label>Espresso</label>
+                                </div>
+                                <div class="price">
+                                    <label>3.25</label>
+                                </div>
+                            </div>
+                            <div class="espresso-item">
+                                <div class="name">
+                                    <label>Flat White</label>
+                                </div>
+                                <div class="price">
+                                    <label>4.00</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="iced-div">
+                        <div class="iced">
+                            <label>ICED</label>
+                        </div>
+                        <div class="iced-items-div">
+                            <div class="iced-item">
+                                <div class="name">
+                                    <label>Mocha</label>
+                                </div>
+                                <div class="price">
+                                    <label>3.75</label>
+                                </div>
+                            </div>
+                            <div class="iced-item">
+                                <div class="name">
+                                    <label>Espresso</label>
+                                </div>
+                                <div class="price">
+                                    <label>3.25</label>
+                                </div>
+                            </div>
+                            <div class="iced-item">
+                                <div class="name">
+                                    <label>Latte</label>
+                                </div>
+                                <div class="price">
+                                    <label>4.50</label>
+                                </div>
+                            </div>
+                            <div class="iced-item">
+                                <div class="name">
+                                    <label>Loose-Leaf Tea</label>
+                                </div>
+                                <div class="price">
+                                    <label>3.00</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lunch-category">
+                    <div class="lunch-item">
+                        <div class="name">
+                            <label>BBQ Ribs</label>
+                        </div>
+                        <div class="price">
+                            <label>30.00</label>
+                        </div>
+                    </div>
+                    <div class="lunch-item">
+                        <div class="name">
+                            <label>Steak</label>
+                        </div>
+                        <div class="price">
+                            <label>32.00</label>
+                        </div>
+                    </div>
+                    <div class="lunch-item">
+                        <div class="name">
+                            <label>Burger and Fries</label>
+                        </div>
+                        <div class="price">
+                            <label>10.00</label>
+                        </div>
+                    </div>
+                    <div class="lunch-item">
+                        <div class="name">
+                            <label>Gumbo</label>
+                        </div>
+                        <div class="price">
+                            <label>23.00</label>
+                        </div>
+                    </div>
+                    <div class="lunch-item">
+                        <div class="name">
+                            <label>Jambalaya</label>
+                        </div>
+                        <div class="price">
+                            <label>26.00</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="dinner-category">
+                    <div class="salad-div">
+                        <div class="salad">
+                            <label>SALAD</label>
+                        </div>
+                        <div class="salad-items-div">
+                            <div class="salad-item">
+                                <div class="name">
+                                    <label>Hosue Salad</label>
+                                </div>
+                                <div class="price">
+                                    <label>10.00</label>
+                                </div>
+                            </div>
+                            <div class="salad-item">
+                                <div class="name">
+                                    <label>Chicken Salad</label>
+                                </div>
+                                <div class="price">
+                                    <label>15.00</label>
+                                </div>
+                            </div>
+                            <div class="salad-item">
+                                <div class="name">
+                                    <label>ceasar Salad</label>
+                                </div>
+                                <div class="price">
+                                    <label>12.25</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="appetizer-div">
+                        <div class="appetizer">
+                            <label>APPETIZERS</label>
+                        </div>
+                        <div class="appetizer-items-div">
+                            <div class="appetizer-item">
+                                <div class="name">
+                                    <label>Nachos Grander</label>
+                                </div>
+                                <div class="price">
+                                    <label>12.00</label>
+                                </div>
+                            </div>
+                            <div class="appetizer-item">
+                                <div class="name">
+                                    <label>Sweet Onion Rings</label>
+                                </div>
+                                <div class="price">
+                                    <label>10.00</label>
+                                </div>
+                            </div>
+                            <div class="appetizer-item">
+                                <div class="name">
+                                    <label>Mozzarella Sticks</label>
+                                </div>
+                                <div class="price">
+                                    <label>14.00</label>
+                                </div>
+                            </div>
+                            <div class="appetizer-item">
+                                <div class="name">
+                                    <label>Breadsticks & Sauce</label>
+                                </div>
+                                <div class="price">
+                                    <label>5.00</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-div">
+                        <div class="main">
+                            <label>MAINS</label>
+                        </div>
+                        <div class="main-items-div">
+                            <div class="main-item">
+                                <div class="name">
+                                    <label>Grilled Cheese</label>
+                                </div>
+                                <div class="price">
+                                    <label>15.00</label>
+                                </div>
+                            </div>
+                            <div class="main-item">
+                                <div class="name">
+                                    <label>Parmesan Chicken</label>
+                                </div>
+                                <div class="price">
+                                    <label>13.00</label>
+                                </div>
+                            </div>
+                            <div class="main-item">
+                                <div class="name">
+                                    <label>Grilled Salmon</label>
+                                </div>
+                                <div class="price">
+                                    <label>15.25</label>
+                                </div>
+                            </div>
+                            <div class="main-item">
+                                <div class="name">
+                                    <label>Grilled Pork Tenderloin</label>
+                                </div>
+                                <div class="price">
+                                    <label>25.00</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dessert-div">
+                        <div class="dessert">
+                            <label>DESSERTS</label>
+                        </div>
+                        <div class="dessert-items-div">
+                            <div class="dessert-item">
+                                <div class="name">
+                                    <label>Cheesecake with Berries</label>
+                                </div>
+                                <div class="price">
+                                    <label>6.75</label>
+                                </div>
+                            </div>
+                            <div class="dessert-item">
+                                <div class="name">
+                                    <label>Red Velvet Cake</label>
+                                </div>
+                                <div class="price">
+                                    <label>9.00</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drink-category">
+                    <div class="drink-item">
+                        <div class="name">
+                            <label>Ice Tea</label>
+                        </div>
+                        <div class="price">
+                            <label>3.00</label>
+                        </div>
+                    </div>
+                    <div class="drink-item">
+                        <div class="name">
+                            <label>Milkshake</label>
+                        </div>
+                        <div class="price">
+                            <label>10.00</label>
+                        </div>
+                    </div>
+                    <div class="drink-item">
+                        <div class="name">
+                            <label>Fruit Juice</label>
+                        </div>
+                        <div class="price">
+                            <label>5.00</label>
+                        </div>
+                    </div>
+                    <div class="drink-item">
+                        <div class="name">
+                            <label>Coke</label>
+                        </div>
+                        <div class="price">
+                            <label>6.00</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% include 'footer.html' %}
+        </div>
+
+<style>
+    :root {
+        --menu-background-image: url("{% static 'base/images/menu-background.jpg' %}");
+    }
+</style>
+
+{% endblock content %}

@@ -1,0 +1,89 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+
+        <link rel="stylesheet" href="{% static 'base/css/contact.css' %}">
+        <div class="content-container contact-content-container">
+            {% include 'navbar.html' %}
+            <div class="contact-header-container">
+                <div class="contact-title">
+                    <label class="title-1">CONTACT US</br></label>
+                    <label class="title-2">LITTLE PEARL CAFE AND RESTAURANT</label>
+                </div>
+            </div>
+            <div class="contact-content-1">
+                <div class="contact-content-1a">
+                    <div class="contact-content-1a-header">
+                        <label class="contact-1">Have a question?</br></label>
+                        <label class="contact-2">MAIL US</label>
+                    </div>
+                    <div class="contact-form">
+                        <input type="text" name="name" id="" placeholder="Enter your name">
+                        <input type="text" name="number" id="" placeholder="Phone Number">
+                        <input type="text" name="email" id="" placeholder="Email address">
+                        <textarea class="message" name="message" id="" cols="20" rows="5"></textarea>
+                        <button class="submit-btn">SUBMIT</button>
+                    </div>
+                </div>
+                <div class="contact-content-1b">
+                    <div class="contact-content-1b-reserve">
+                        <div class="contact-reserve-1">
+                            <label class="contact-reserve-title-1">NEED A TABLE?</label>
+                            <label class="contact-reserve-title-2">MAKE A RESERVATION ONLINE!</label>
+                        </div>
+                        <div class="contact-reserve-2">
+                            <button class="contact-reserve-btn">RESERVE NOW!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-content-2">
+                <div class="about-location">
+                    <div class="about-location-a">
+                        <div class="location-a-div-1">
+                            <label class="location-a-1">Our Location</label>
+                            <label class="location-a-2">VISIT US!</label>
+                        </div>
+                        <div class="location-a-div-2">
+                            <label class="location-a-3">
+                                We are located next to Green House Club.</br>
+                                60 Chalton St, London</br>
+                                NW1 1HS, United Kingdom
+                            </label>
+                        </div>
+                    </div>
+                    <div class="about-location-b">
+
+                    </div>
+                </div>
+                <div class="about-contact">
+                    <div class="about-contact-a">
+
+                    </div>
+                    <div class="about-contact-b">
+                        <div class="about-b-div-1">
+                            <label class="contact-b-1">Have a question?</label>
+                            <label class="contact-b-2">CONTACT US</label>
+                        </div>
+                        <div class="about-b-div-2">
+                            <label class="contact-b-3">
+                                Call Us: <span class="contact-span">+12 345 6789 10</span></br>
+                                Email Us: <span class="contact-span">juanpayb@gmail.com</span></br>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% include 'footer.html' %}
+        </div>
+        <style>
+            :root {
+                --contact-header-bg-image: url("{% static 'base/images/contact-header-bg.jpg' %}");
+                --contact-content-bg-image: url("{% static 'base/images/contact-content-bg.jpg' %}");
+                --location-b-image: url("{% static 'base/images/location-b.jpg' %}");
+                --girl-contact-image: url("{% static 'base/images/girl-contact.jpg' %}");
+            }
+        </style>
+
+{% endblock content %}

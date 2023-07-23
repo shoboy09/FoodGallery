@@ -1,0 +1,152 @@
+.reserve-content-container {
+  display: block;
+}
+
+.reserve-header-container {
+  background-image: var(--coffee-1-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(165, 165, 165);
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reserve-title {
+  width: 70%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title-1 {
+  color: white;
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.title-2 {
+  color: rgb(218, 218, 218);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.reservation-container {
+  background-color: rgb(250, 242, 234);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 95%;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 90%;
+}
+
+.reservation-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+}
+
+.reserve-1 {
+  color: rgb(238, 177, 92);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.reserve-2 {
+  font-size: 3.8rem;
+  font-weight: 800;
+}
+
+.form {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 75%;
+}
+
+.form input,
+.form select {
+  border: 3px solid white;
+  border-radius: 3px;
+  padding: 1.3rem 1rem;
+  font-size: 1rem;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time,
+.guest {
+  width: 49%;
+}
+
+.message {
+  font-size: 1rem;
+  padding: 1rem;
+  border: 3px solid white;
+  border-radius: 3px;
+}
+
+.submit-btn {
+  border: none;
+  border-radius: 3px;
+  height: 20%;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: rgb(42, 40, 36);
+  color: white;
+}
+
+.form input:hover,
+.form select:hover,
+.message:hover {
+  border: 3px solid grey;
+  transition: all ease-in-out 0.1s;
+}
+
+.form input:focus,
+.form select:focus,
+.message:focus {
+  border: 3px solid rgb(255, 136, 0);
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: rgb(233, 143, 43);
+  transition: all ease-in-out 0.1s;
+}
+
+.reservation-images {
+  width: 42%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-1 {
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  background-image: var(--restaurant-bg1-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

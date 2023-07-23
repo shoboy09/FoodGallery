@@ -1,0 +1,53 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+        <link rel="stylesheet" href="{% static 'base/css/reservation.css' %}">
+        <div class="content-container reserve-content-container">
+            {% include 'navbar.html' %}
+            <div class="reserve-header-container">
+                <div class="reserve-title">
+                    <label class="title-1">RESERVATIONS</br></label>
+                    <label class="title-2">LITTLE PEARL CAFE AND RESTAURANT</label>
+                </div>
+            </div>
+            <div class="reservation-container">
+                <div class="reservation-form">
+                    <div class="reservation-header">
+                        <label class="reserve-1">Need a reservation?</br></label>
+                        <label class="reserve-2">BOOK A TABLE</label>
+                    </div>  
+                    <form action="" method="post">
+                        <div class="form">
+                            <input type="text" name="name" id="" placeholder="Enter your name">
+                            <input type="text" name="email" id="" placeholder="Email address">
+                            <div class="choices">
+                                <input type="date" name="date" id="">
+                                <input type="time" name="time" id="">
+                                <!-- <select name="time" id="" class="time">
+                                    <option value="7">7:00 PM</option>
+                                    <option value="8">8:00 PM</option>
+                                    <option value="9">9:00 PM</option>
+                                </select> -->
+                                <input type="number" name="guest" class="guest" id="" placeholder="Number of guests">
+                            </div>
+                            <textarea class="message" name="message" id="" cols="20" rows="7"></textarea>
+                            <input type="submit" value="Submit" class="submit-btn">
+                        </div>
+                    </form>
+                </div>
+                <div class="reservation-images">
+                    <div class="image-1">
+
+                    </div>
+                </div>
+            </div>
+            {% include 'footer.html' %}
+        </div>
+        <style>
+            :root {
+                --coffee-1-image: url("{% static 'base/images/coffee-1.jpg' %}");
+                --restaurant-bg1-image: url("{% static 'base/images/restaurant-bg1.jpg' %}");
+            }
+        </style>
+{% endblock content %}
