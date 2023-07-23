@@ -1,6 +1,7 @@
 .footer-container {
   height: 10%;
   display: flex;
+  z-index: 10000;
 }
 
 .footer {

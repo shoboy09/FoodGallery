@@ -4,8 +4,8 @@
 {% block content %}
 <link rel="stylesheet" href="{% static 'base/css/menu.css' %}">
 
+        {% include 'navbar.html' %}
         <div class="content-container menu-content-container">
-            {% include 'navbar.html' %}
             <div class="menu-header-container">
                 <div class="title">
                     <label class="title-1">OUR MENU</br></label>
@@ -241,7 +241,7 @@
                         </div>
                     </div>
                     <div class="main-div">
-                        <div class="main">
+                        <div class="main-label">
                             <label>MAINS</label>
                         </div>
                         <div class="main-items-div">

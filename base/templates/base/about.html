@@ -2,9 +2,8 @@
 {% load static %}
 {% block content %}
         <link rel="stylesheet" href="{% static 'base/css/about.css' %}">
-        
+        {% include 'navbar.html' %}
         <div class="content-container about-content-container">
-            {% include 'navbar.html' %}
             <div class="about-header-container">
                 <div class="title-about">
                     <label class="title-1">ABOUT US</br></label>

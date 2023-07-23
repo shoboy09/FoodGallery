@@ -92,7 +92,7 @@
 .coffee-category {
   width: 90%;
   height: 100%;
-  display: flex;
+  display: none;
   justify-content: space-between;
 }
 
@@ -157,10 +157,11 @@
 .dinner-category {
   width: 90%;
   height: 100%;
-  display: none;
+  padding: 0 4rem;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .salad-div,
@@ -174,7 +175,7 @@
 
 .salad,
 .appetizer,
-.main,
+.main-label,
 .dessert {
   border-bottom: 4px solid rgb(235, 144, 17);
   border-radius: 3px;

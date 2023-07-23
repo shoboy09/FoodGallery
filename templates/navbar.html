@@ -1,17 +1,20 @@
 <div class="navbar">
     <div class="navbar-container">
         <div class="nav-logo">
-            <h2>LITTLE PEARL</h2>
+            <a href="{% url 'home' %}"><button>LITTLE PEARL</button></a>
         </div>
         <div class="nav-content">
             <div class="nav-menu nav-item">
-                <button>MENU</button>
+                <a href="{% url 'menu' %}"><button>MENU</button></a>
             </div>
             <div class="nav-reservation nav-item">
-                <button>RESERVE</button>
+                <a href="{% url 'reservation' %}"><button>RESERVE</button></a>
             </div>
             <div class="nav-blog nav-item">
                 <button>BLOG</button>
+            </div>
+            <div class="nav-contact nav-item">
+                <a href="{% url 'contact' %}"><button>CONTACT US</button></a>
             </div>
         </div>
     </div>

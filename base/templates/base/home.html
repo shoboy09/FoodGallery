@@ -4,9 +4,9 @@
 
 {% block content %}
 <link rel="stylesheet" href="{% static 'base/css/home.css' %}">
-    
+        {% include 'navbar.html' %}
         <div class="content-container home-content-container">
-            {% include 'navbar.html' %}
+            
             <div class="home-header-container">
                 <div class="slogan-container">
                     <label class="slogan-1">GOOD FOOD, GOOD MOOD</br></label>
@@ -14,10 +14,10 @@
                 </div>
                 <div class="button-container">
                     <div class="contact-container">
-                        <button>MORE ABOUT US</button>
+                        <a href="{% url 'about' %}"><button>MORE ABOUT US</button></a>
                     </div>
                     <div class="reserve-container">
-                        <button>RESERVE A TABLE!</button>
+                        <a href="{% url 'reservation' %}"><button>RESERVE A TABLE!</button></a>
                     </div>
                 </div>
             </div>
