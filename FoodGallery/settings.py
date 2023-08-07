@@ -28,6 +28,19 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'DEBUG',
+    },
+}
 
 # Application definition
 
@@ -79,8 +92,12 @@ WSGI_APPLICATION = 'FoodGallery.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'foodgallerydb',
+        'USER': 'renz',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '3308',
     }
 }
 
@@ -122,7 +139,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "base", "static"),   # For base app's static files
-    os.path.join(BASE_DIR, "static"),           # For project-level static files
+    # For project-level static files
+    os.path.join(BASE_DIR, "static"),
 ]
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
