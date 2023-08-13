@@ -26,3 +26,18 @@ class FgMenuSubCategory(models.Model):
     class Meta:
         # managed = False
         db_table = 'fg_menu_sub_category'
+
+class Reservation(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    date = models.DateField()
+    time = models.TimeField()
+    guest = models.IntegerField()
+    message = models.TextField()
+    status = models.CharField(
+        max_length=20, 
+        choices=[('pending', 'Pending'), ('confirmed', 'Confirmed'), ('cancelled', 'Cancelled')], 
+        default='pending')
+
+    def __str__(self):
+        return self.name

@@ -1,8 +1,9 @@
-from django.shortcuts import render, get_object_or_404
-from .models import FgMenuCategory, FgMenuSubCategory, FgMenuItem
-from django.core import serializers
+from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib import messages
+from django.views.decorators.csrf import csrf_protect
 from django.http import JsonResponse
-import json
+from .models import FgMenuCategory, FgMenuSubCategory, FgMenuItem, Reservation
+from .forms import ReserveForm
 
 # Create your views here.
 
@@ -38,9 +39,26 @@ def home(request):
 def about(request):
     return render(request, 'base/about.html')
 
-
+@csrf_protect
 def reservation(request):
-    return render(request, 'base/reservation.html')
+    if request.method == 'POST':
+        form = ReserveForm(request.POST)
+        if form.is_valid():
+            reservation = Reservation(
+                name=form.cleaned_data['name'],
+                email=form.cleaned_data['email'],
+                date=form.cleaned_data['date'],
+                time=form.cleaned_data['time'],
+                guest=form.cleaned_data['guest'],
+                message=form.cleaned_data['message']
+            )
+            reservation.save()
+            messages.success(request, 'Reservation submitted successfully!')
+            return redirect('reservation')
+    else:
+        form = ReserveForm()
+    
+    return render(request, 'base/reservation.html', {'form': form})
 
 
 def contact(request):

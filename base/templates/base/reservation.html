@@ -18,20 +18,16 @@
                         <label class="reserve-2">BOOK A TABLE</label>
                     </div>  
                     <form action="" method="post">
+                        {% csrf_token %}
                         <div class="form">
-                            <input type="text" name="name" id="" placeholder="Enter your name">
-                            <input type="text" name="email" id="" placeholder="Email address">
+                            {{ form.name }}
+                            {{ form.email }}
                             <div class="choices">
-                                <input type="date" name="date" id="">
-                                <input type="time" name="time" id="">
-                                <!-- <select name="time" id="" class="time">
-                                    <option value="7">7:00 PM</option>
-                                    <option value="8">8:00 PM</option>
-                                    <option value="9">9:00 PM</option>
-                                </select> -->
-                                <input type="number" name="guest" class="guest" id="" placeholder="Number of guests">
+                                {{ form.date }}
+                                {{ form.time }}
+                                {{ form.guest }}
                             </div>
-                            <textarea class="message" name="message" id="" cols="20" rows="7"></textarea>
+                            {{ form.message }}
                             <input type="submit" value="Submit" class="submit-btn">
                         </div>
                     </form>
