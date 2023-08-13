@@ -1,0 +1,45 @@
+{% extends 'main.html' %}
+{% load static %}
+{% load custom_filters %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'base/css/wew.css' %}">
+<script src="{% static 'base/js/base.js' %}"></script>
+
+        {% include 'navbar.html' %}
+        <div class="content-container menu-content-container">
+            <div class="menu-header-container">
+                <div class="title">
+                    <label class="title-1">OUR MENU</br></label>
+                    <label class="title-2">SELECT MENU BELOW</label>
+                </div>
+                <div class="menu-category-container">
+                    {% for category in categories %}
+                    <div class="menu-category {{ category.menu_name|lower }}-menu-category" data-category-id="{{ category.id }}">
+                        <div class="icon-div">
+                            <i class="fa-solid fa-{{ icon_classes|get_icon_class:category.menu_name }}"></i>
+                        </div>
+                        <div class="menu-name">
+                            <label>{{ category.menu_name|upper }}</label>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="menu-container">
+                {% for category in categories %}
+                    <div class="{{ category.menu_name|lower }}-category" id="categoryClass">
+                
+                        
+                    </div>
+                {% endfor %}
+            </div>
+            {% include 'footer.html' %}
+        </div>
+<style>
+    :root {
+        --menu-background-image: url("{% static 'base/images/menu-background.jpg' %}");
+    }
+</style>
+
+{% endblock content %}

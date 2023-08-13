@@ -1,0 +1,626 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'dashboard/css/dashboard.css' %}">
+    <script src="{% static 'dashboard/js/dashboard.js' %}"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="header-1">
+                <div class="logo-div">
+                    <label>LOGO</label>
+                </div>
+                <div class="bookings-div">
+                    <label>BOOKINGS</label>
+                </div>
+            </div>
+            <div class="header-2">
+                <button class="reserve-btn">+ NEW RESERVATION</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="booking-content hidden">
+                <div class="booking-header">
+                    <div class="arrow-left">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="booking-date">
+                        <label>TODAY -</label>
+                        <label>date</lab>
+                    </div>
+                    <div class="arrow-right">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="booking-list">
+                    <div class="list">
+                        <div class="number-reserve">
+                            <i class="fa-solid fa-user"></i>
+                            <label>3</label>
+                        </div>
+                        <div class="name-reserve">
+                            <label>Renz Hawke</label>
+                        </div>
+                        <div class="time-reserve">
+                            <label>19:00</label>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="number-reserve">
+                            <i class="fa-solid fa-user"></i>
+                            <label>3</label>
+                        </div>
+                        <div class="name-reserve">
+                            <label>Renz Hawke</label>
+                        </div>
+                        <div class="time-reserve">
+                            <label>19:00</label>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="number-reserve">
+                            <i class="fa-solid fa-user"></i>
+                            <label>3</label>
+                        </div>
+                        <div class="name-reserve">
+                            <label>Renz Hawke</label>
+                        </div>
+                        <div class="time-reserve">
+                            <label>19:00</label>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="number-reserve">
+                            <i class="fa-solid fa-user"></i>
+                            <label>3</label>
+                        </div>
+                        <div class="name-reserve">
+                            <label>Renz Hawke</label>
+                        </div>
+                        <div class="time-reserve">
+                            <label>19:00</label>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="number-reserve">
+                            <i class="fa-solid fa-user"></i>
+                            <label>3</label>
+                        </div>
+                        <div class="name-reserve">
+                            <label>Renz Hawke</label>
+                        </div>
+                        <div class="time-reserve">
+                            <label>19:00</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reservation-content">
+                <div class="available-tables-header">
+                    <label>AVAILABLE TABLES</label>
+                </div>
+                <div class="available-tables-content">
+                    <div class="available-tables-list">
+                        <label>TABLE 01</label>
+                        <div class="available-table-reserve-btn">
+                            <label>RESERVE</label>
+                        </div>
+                    </div>
+                    <div class="available-tables-list">
+                        <label>TABLE 02</label>
+                        <div class="available-table-reserve-btn">
+                            <label>RESERVE</label>
+                        </div>
+                    </div>
+                    <div class="available-tables-list">
+                        <label>TABLE 03</label>
+                        <div class="available-table-reserve-btn">
+                            <label>RESERVE</label>
+                        </div>
+                    </div>
+                    <div class="available-tables-list">
+                        <label>TABLE 04</label>
+                        <div class="available-table-reserve-btn">
+                            <label>RESERVE</label>
+                        </div>
+                    </div>
+                    <div class="available-tables-list">
+                        <label>TABLE 05</label>
+                        <div class="available-table-reserve-btn">
+                            <label>RESERVE</label>
+                        </div>
+                    </div>
+                    <div class="available-tables-list">
+                        <label>TABLE 06</label>
+                        <div class="available-table-reserve-btn">
+                            <label>RESERVE</label>
+                        </div>
+                    </div>
+                    <div class="available-tables-list">
+                        <label>TABLE 07</label>
+                        <div class="available-table-reserve-btn">
+                            <label>RESERVE</label>
+                        </div>
+                    </div>
+                    <div class="available-tables-list">
+                        <label>TABLE 08</label>
+                        <div class="available-table-reserve-btn">
+                            <label>RESERVE</label>
+                        </div>
+                    </div>
+                    <div class="available-tables-list">
+                        <label>TABLE 09</label>
+                        <div class="available-table-reserve-btn">
+                            <label>RESERVE</label>
+                        </div>
+                    </div>
+                    <div class="available-tables-list">
+                        <label>TABLE 10</label>
+                        <div class="available-table-reserve-btn">
+                            <label>RESERVE</label>
+                        </div>
+                    </div>
+                    <div class="available-tables-list">
+                        <label>TABLE 11</label>
+                        <div class="available-table-reserve-btn">
+                            <label>RESERVE</label>
+                        </div>
+                    </div>
+                    <div class="available-tables-list">
+                        <label>TABLE 12</label>
+                        <div class="available-table-reserve-btn">
+                            <label>RESERVE</label>
+                        </div>
+                    </div>
+                    <div class="available-tables-list">
+                        <label>TABLE 13</label>
+                        <div class="available-table-reserve-btn">
+                            <label>RESERVE</label>
+                        </div>
+                    </div>
+                    <div class="available-tables-list">
+                        <label>TABLE 14</label>
+                        <div class="available-table-reserve-btn">
+                            <label>RESERVE</label>
+                        </div>
+                    </div>
+                    <div class="available-tables-list">
+                        <label>TABLE 15</label>
+                        <div class="available-table-reserve-btn">
+                            <label>RESERVE</label>
+                        </div>
+                    </div>
+                    <div class="available-tables-list">
+                        <label>TABLE 16</label>
+                        <div class="available-table-reserve-btn">
+                            <label>RESERVE</label>
+                        </div>
+                    </div>
+                    <div class="available-tables-list">
+                        <label>TABLE 17</label>
+                        <div class="available-table-reserve-btn">
+                            <label>RESERVE</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reservation-table">
+                <div class="reservation-table-header">
+                    <div class="rta">
+                        <div class="rta-time"></div>
+                        <div class="rta-date"></div>
+                    </div>
+                    <div class="rtb"><label></label></div>
+                </div>
+                <div class="reservation-table-content">
+                    <div class="rtc-1">
+                        <div class="rtc-a">
+                            <div class="rtc-a-title">
+                                <label>DATE</label>
+                            </div>
+                            <div class="rtc-a-content">
+                                <input type="date" name="" id="">
+                            </div>
+                        </div>
+                        <div class="rtc-b">
+                            <div class="rtc-b-title">
+                                <label>TIME</label>
+                            </div>
+                            <div class="rtc-b-content">
+                                <input type="time" name="" id="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rtc-2">
+                        <div class="rtc-c">
+                            <div class="rtc-c-title">
+                                <label>NAME</label>
+                            </div>
+                            <div class="rtc-c-content">
+                                <input type="text" name="" id="" placeholder="- - - -">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rtc-3">
+                        <div class="rtc-d">
+                            <div class="rtc-d-title">
+                                <label>AMOUNT</label>
+                            </div>
+                            <div class="rtc-d-content">
+                                <div class="rtc-d-content-a">
+                                    <i class="reserve-user-icon fa-regular fa-user"></i>
+                                    <label>1</label>
+                                </div>
+                                <div class="rtc-d-content-a">
+                                    <i class="reserve-user-icon fa-regular fa-user"></i>
+                                    <label>2</label>
+                                </div>
+                                <div class="rtc-d-content-a">
+                                    <i class="reserve-user-icon fa-regular fa-user"></i>
+                                    <label>3</label>
+                                </div>
+                                <div class="rtc-d-content-a">
+                                    <i class="reserve-user-icon fa-regular fa-user"></i>
+                                    <label>4</label>
+                                </div>
+                                <div class="rtc-d-content-a">
+                                    <i class="reserve-user-icon fa-regular fa-user"></i>
+                                    <label>5</label>
+                                </div>
+                                <div class="rtc-d-content-a">
+                                    <i class="reserve-user-icon fa-regular fa-user"></i>
+                                    <label>6</label>
+                                </div>
+                                <div class="rtc-d-content-a">
+                                    <i class="reserve-user-icon fa-regular fa-user"></i>
+                                    <label>7</label>
+                                </div>
+                                <div class="rtc-d-content-a">
+                                    <i class="reserve-user-icon fa-regular fa-user"></i>
+                                    <label>8</label>
+                                </div>
+                                <div class="rtc-d-content-a">
+                                    <i class="reserve-user-icon fa-regular fa-user"></i>
+                                    <label>9</label>
+                                </div>
+                                <div class="rtc-d-content-a">
+                                    <i class="reserve-user-icon fa-regular fa-user"></i>
+                                    <label>10+</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-table-btn">
+                    <button type="submit">MAKE RESERVATION</button>
+                </div>
+            </div>
+            <div class="table-container">
+                <div class="column-1">
+                    <div class="column-1a">
+                        <div class="large-table table-1 table">
+                            <div class="table-number">
+                                <label>01</label>
+                            </div>
+                            <div class="table-reserve-name">
+                                <label></label>
+                                <div class="inline-container">
+                                    <i class="fa-solid fa-user"></i>
+                                    <label></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chair chair-1"></div>
+                        <div class="chair chair-2"></div>
+                        <div class="chair chair-3"></div>
+                        <div class="chair chair-4"></div>
+                        <div class="chair chair-5"></div>
+                        <div class="chair chair-6"></div>
+                        <div class="chair chair-7"></div>
+                        <div class="chair chair-8"></div>
+                    </div>
+                    <div class="column-1b">
+                        <div class="medium-table table-2 table">
+                            <div class="table-number">
+                                <label>02</label>
+                            </div>
+                            <div class="table-reserve-name">
+                                <label></label>
+                                <div class="inline-container">
+                                    <i class="fa-solid fa-user"></i>
+                                    <label></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chair chair-9"></div>
+                        <div class="chair chair-10"></div>
+                        <div class="chair chair-11"></div>
+                        <div class="chair chair-12"></div>
+                    </div>
+                </div>
+                <div class="column-2">
+                    <div class="row-1">
+                        <div class="row-1a">
+                            <div class="medium-table table-3 table">
+                                <div class="table-number">
+                                    <label>03</label>
+                                </div>
+                                <div class="table-reserve-name">
+                                    <label></label>
+                                    <div class="inline-container">
+                                        <i class="fa-solid fa-user"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chair chair-13"></div>
+                            <div class="chair chair-14"></div>
+                            <div class="chair chair-15"></div>
+                            <div class="chair chair-16"></div>
+                        </div>
+                        <div class="row-1b">
+                            <div class="medium-table table-4 table">
+                                <div class="table-number">
+                                    <label>04</label>
+                                </div>
+                                <div class="table-reserve-name">
+                                    <label></label>
+                                    <div class="inline-container">
+                                        <i class="fa-solid fa-user"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chair chair-17"></div>
+                            <div class="chair chair-18"></div>
+                            <div class="chair chair-19"></div>
+                            <div class="chair chair-20"></div>
+                        </div>
+                        <div class="row-1c">
+                            <div class="medium-table table-5 table">
+                                <div class="table-number">
+                                    <label>05</label>
+                                </div>
+                                <div class="table-reserve-name">
+                                    <label></label>
+                                    <div class="inline-container">
+                                        <i class="fa-solid fa-user"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chair chair-21"></div>
+                            <div class="chair chair-22"></div>
+                            <div class="chair chair-23"></div>
+                            <div class="chair chair-24"></div>
+                        </div>
+                        <div class="row-1d">
+                            <div class="medium-table table-6 table">
+                                <div class="table-number">
+                                    <label>06</label>
+                                </div>
+                                <div class="table-reserve-name">
+                                    <label></label>
+                                    <div class="inline-container">
+                                        <i class="fa-solid fa-user"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chair chair-25"></div>
+                            <div class="chair chair-26"></div>
+                            <div class="chair chair-27"></div>
+                            <div class="chair chair-28"></div>
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <div class="row-2a">
+                            <div class="small-table table-7 table">
+                                <div class="table-number">
+                                    <label>07</label>
+                                </div>
+                                <div class="table-reserve-name">
+                                    <label></label>
+                                    <div class="inline-container">
+                                        <i class="fa-solid fa-user"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chair chair-29"></div>
+                            <div class="chair chair-30"></div>
+                        </div>
+                        <div class="row-2b">
+                            <div class="small-table table-8 table">
+                                <div class="table-number">
+                                    <label>08</label>
+                                </div>
+                                <div class="table-reserve-name">
+                                    <label></label>
+                                    <div class="inline-container">
+                                        <i class="fa-solid fa-user"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chair chair-31"></div>
+                            <div class="chair chair-32"></div>
+                        </div>
+                        <div class="row-2c">
+                            <div class="small-table table-9 table">
+                                <div class="table-number">
+                                    <label>09</label>
+                                </div>
+                                <div class="table-reserve-name">
+                                    <label></label>
+                                    <div class="inline-container">
+                                        <i class="fa-solid fa-user"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chair chair-33"></div>
+                            <div class="chair chair-34"></div>
+                        </div>
+                        <div class="row-2d">
+                            <div class="small-table table-10 table">
+                                <div class="table-number">
+                                    <label>10</label>
+                                </div>
+                                <div class="table-reserve-name">
+                                    <label></label>
+                                    <div class="inline-container">
+                                        <i class="fa-solid fa-user"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chair chair-35"></div>
+                            <div class="chair chair-36"></div>
+                        </div>
+                        <div class="row-2e">
+                            <div class="small-table table-11 table">
+                                <div class="table-number">
+                                    <label>11</label>
+                                </div>
+                                <div class="table-reserve-name">
+                                    <label></label>
+                                    <div class="inline-container">
+                                        <i class="fa-solid fa-user"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chair chair-37"></div>
+                            <div class="chair chair-38"></div>
+                        </div>
+                    </div>
+                    <div class="row-3">
+                        <div class="row-3a">
+                            <div class="medium-table table-12 table">
+                                <div class="table-number">
+                                    <label>12</label>
+                                </div>
+                                <div class="table-reserve-name">
+                                    <label></label>
+                                    <div class="inline-container">
+                                        <i class="fa-solid fa-user"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chair chair-39"></div>
+                            <div class="chair chair-40"></div>
+                            <div class="chair chair-41"></div>
+                            <div class="chair chair-42"></div>
+                        </div>
+                        <div class="row-3b">
+                            <div class="medium-table table-13 table">
+                                <div class="table-number">
+                                    <label>13</label>
+                                </div>
+                                <div class="table-reserve-name">
+                                    <label></label>
+                                    <div class="inline-container">
+                                        <i class="fa-solid fa-user"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chair chair-43"></div>
+                            <div class="chair chair-44"></div>
+                            <div class="chair chair-45"></div>
+                            <div class="chair chair-46"></div>
+                        </div>
+                        <div class="row-3c">
+                            <div class="medium-table table-14 table">
+                                <div class="table-number">
+                                    <label>14</label>
+                                </div>
+                                <div class="table-reserve-name">
+                                    <label></label>
+                                    <div class="inline-container">
+                                        <i class="fa-solid fa-user"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chair chair-47"></div>
+                            <div class="chair chair-48"></div>
+                            <div class="chair chair-49"></div>
+                            <div class="chair chair-50"></div>
+                        </div>
+                        <div class="row-3d">
+                            <div class="medium-table table-15 table">
+                                <div class="table-number">
+                                    <label>15</label>
+                                </div>
+                                <div class="table-reserve-name">
+                                    <label></label>
+                                    <div class="inline-container">
+                                        <i class="fa-solid fa-user"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chair chair-51"></div>
+                            <div class="chair chair-52"></div>
+                            <div class="chair chair-53"></div>
+                            <div class="chair chair-54"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-3">
+                    <div class="column-3a">
+                        <div class="large-table table-16 table">
+                            <div class="table-number">
+                                <label>16</label>
+                            </div>
+                            <div class="table-reserve-name">
+                                <label></label>
+                                <div class="inline-container">
+                                    <i class="fa-solid fa-user"></i>
+                                    <label></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chair chair-55"></div>
+                        <div class="chair chair-56"></div>
+                        <div class="chair chair-57"></div>
+                        <div class="chair chair-58"></div>
+                        <div class="chair chair-59"></div>
+                        <div class="chair chair-60"></div>
+                        <div class="chair chair-61"></div>
+                        <div class="chair chair-62"></div>
+                    </div>
+                    <div class="column-3b">
+                        <div class="medium-table table-17 table">
+                            <div class="table-number">
+                                <label>17</label>
+                            </div>
+                            <div class="table-reserve-name">
+                                <label></label>
+                                <div class="inline-container">
+                                    <i class="fa-solid fa-user"></i>
+                                    <label></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chair chair-63"></div>
+                        <div class="chair chair-64"></div>
+                        <div class="chair chair-65"></div>
+                        <div class="chair chair-66"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

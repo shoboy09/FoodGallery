@@ -1,0 +1,1505 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.available-tables-content::-webkit-scrollbar {
+  width: 6px;
+  opacity: 0;
+}
+
+.available-tables-content::-webkit-scrollbar-track {
+  background-color: rgb(32, 33, 35);
+}
+
+.available-tables-content::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 15px;
+}
+
+.main-container {
+  background-color: rgb(38, 64, 52);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  user-select: none;
+}
+
+.header {
+  border-bottom: 1px solid rgb(158, 158, 158);
+  width: 95%;
+  display: flex;
+  padding: 0 2rem;
+  justify-content: space-between;
+}
+
+.header-1 {
+  display: flex;
+  gap: 4rem;
+}
+
+.logo-div {
+  padding: 1.5rem;
+  color: white;
+}
+
+.bookings-div,
+.calendar-div {
+  padding: 1.5rem 3rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+
+.bookings-div label {
+  cursor: pointer;
+}
+
+.header-2 {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reserve-btn {
+  background-color: rgb(231, 172, 53);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.reserve-btn * {
+  cursor: inherit;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation-content {
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: rgb(32, 33, 35);
+  position: absolute;
+  width: 25%;
+  height: 90%;
+  z-index: 1001;
+  display: none;
+  flex-direction: column;
+}
+
+.available-tables-header {
+  border-bottom: 1px solid grey;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.available-tables-content {
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  overflow: auto;
+}
+
+.available-tables-list {
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+  color: white;
+}
+
+.available-tables-list label {
+  font-size: 0.8rem;
+}
+
+.available-table-reserve-btn {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(231, 172, 53);
+  padding: 0.5rem 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.available-table-reserve-btn * {
+  cursor: inherit;
+}
+
+.reservation-table {
+  position: absolute;
+  z-index: 1001;
+  border: none;
+  background-color: rgb(32, 33, 35);
+  width: 22%;
+  height: 70%;
+  border-radius: 10px;
+  padding: 1rem;
+  display: none;
+  flex-direction: column;
+}
+
+.reservation-table-header {
+  height: 15%;
+  display: flex;
+}
+
+.rta {
+  width: 50%;
+  color: white;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.rtb {
+  width: 50%;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.3rem;
+}
+
+.reservation-table-content {
+  height: 70%;
+}
+
+.rtc-1 {
+  height: 32%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rtc-a,
+.rtc-b {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.rtc-a-title,
+.rtc-b-title {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.rtc-a-content,
+.rtc-b-content {
+  border-bottom: 1px solid gray;
+  padding-bottom: 0.5rem;
+}
+
+.rtc-a-content input,
+.rtc-b-content input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  filter: invert(100%);
+}
+
+.rtc-2 {
+  height: 32%;
+  display: flex;
+}
+
+.rtc-c {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.rtc-c-title {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.rtc-c-content {
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.rtc-c-content input {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.rtc-3 {
+  height: 36%;
+  display: flex;
+}
+
+.rtc-d {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.rtc-d-title {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.rtc-d-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rtc-d-content-a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.reserve-user-icon {
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.rtc-d-content-a label {
+  font-size: 0.6rem;
+  color: white;
+}
+
+.reservation-table-btn {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation-table-btn button {
+  width: 100%;
+  height: 70%;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(240, 164, 11);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.booking-content {
+  border: 1px solid gray;
+  background-color: rgb(50, 85, 69);
+  position: absolute;
+  left: 2%;
+  top: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 80%;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.booking-header {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+
+.arrow-left,
+.arrow-right {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.booking-date {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.booking-list {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  border-bottom: 1px solid gray;
+  width: 100%;
+  height: 13%;
+  display: flex;
+}
+
+.number-reserve {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.number-reserve i {
+  font-size: 0.6rem;
+}
+
+.name-reserve {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  color: rgb(233, 231, 231);
+}
+
+.time-reserve {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.table-container {
+  position: relative;
+  width: 95%;
+  height: 100%;
+  display: flex;
+}
+
+.column-1 {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.column-1a {
+  position: relative;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-1 {
+  height: 80%;
+  width: 55%;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.chair-1 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 12.5%;
+  top: 15%;
+  left: 10%;
+}
+
+.chair-2 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 12.5%;
+  top: 33.5%;
+  left: 10%;
+}
+
+.chair-3 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 12.5%;
+  top: 53.5%;
+  left: 10%;
+}
+
+.chair-4 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 12.5%;
+  top: 72.5%;
+  left: 10%;
+}
+
+.chair-5 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 12.5%;
+  top: 15%;
+  left: 64%;
+}
+
+.chair-6 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 12.5%;
+  top: 33.5%;
+  left: 64%;
+}
+
+.chair-7 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 12.5%;
+  top: 53.5%;
+  left: 64%;
+}
+
+.chair-8 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 12.5%;
+  top: 72.5%;
+  left: 64%;
+}
+
+.column-1b {
+  position: relative;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-2 {
+  height: 55%;
+  width: 55%;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.chair-9 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top: 37.5%;
+  left: 10%;
+}
+
+.chair-10 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top: 10%;
+  left: 37.5%;
+}
+
+.chair-11 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top: 37.5%;
+  left: 65%;
+}
+
+.chair-12 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top: 65%;
+  left: 37.5%;
+}
+
+.column-2 {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row-1 {
+  height: 35%;
+  display: flex;
+}
+
+.row-1a {
+  position: relative;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-3 {
+  height: 50%;
+  width: 75%;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.chair-13 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 62%;
+  left: 23%;
+}
+
+.chair-14 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 62%;
+  left: 56%;
+}
+
+.chair-15 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 12%;
+  left: 56%;
+}
+
+.chair-16 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 12%;
+  left: 23%;
+}
+
+.row-1b {
+  position: relative;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-4 {
+  height: 50%;
+  width: 75%;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.chair-17 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 62%;
+  left: 23%;
+}
+
+.chair-18 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 62%;
+  left: 56%;
+}
+
+.chair-19 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 12%;
+  left: 56%;
+}
+
+.chair-20 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 12%;
+  left: 23%;
+}
+
+.row-1c {
+  position: relative;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-5 {
+  height: 50%;
+  width: 75%;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.chair-21 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 62%;
+  left: 23%;
+}
+
+.chair-22 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 62%;
+  left: 56%;
+}
+
+.chair-23 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 12%;
+  left: 56%;
+}
+
+.chair-24 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 12%;
+  left: 23%;
+}
+
+.row-1d {
+  position: relative;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-6 {
+  height: 50%;
+  width: 75%;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.chair-25 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 62%;
+  left: 23%;
+}
+
+.chair-26 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 62%;
+  left: 56%;
+}
+
+.chair-27 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 12%;
+  left: 56%;
+}
+
+.chair-28 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 12%;
+  left: 23%;
+}
+
+.row-2 {
+  height: 30%;
+  display: flex;
+}
+
+.row-2a {
+  position: relative;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-7 {
+  height: 55%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.chair-29 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 27%;
+  height: 32%;
+  top: 33%;
+  left: 12%;
+}
+
+.chair-30 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 27%;
+  height: 32%;
+  top: 33%;
+  left: 61%;
+}
+
+.row-2b {
+  position: relative;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-8 {
+  height: 55%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.chair-31 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 27%;
+  height: 32%;
+  top: 8%;
+  left: 37%;
+}
+
+.chair-32 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 27%;
+  height: 32%;
+  top: 60%;
+  left: 37%;
+}
+
+.row-2c {
+  position: relative;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-9 {
+  height: 55%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.chair-33 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 27%;
+  height: 32%;
+  top: 33%;
+  left: 12%;
+}
+
+.chair-34 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 27%;
+  height: 32%;
+  top: 33%;
+  left: 61%;
+}
+
+.row-2d {
+  position: relative;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-10 {
+  height: 55%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.chair-35 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 27%;
+  height: 32%;
+  top: 8%;
+  left: 37%;
+}
+
+.chair-36 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 27%;
+  height: 32%;
+  top: 60%;
+  left: 37%;
+}
+
+.row-2e {
+  position: relative;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-11 {
+  height: 55%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.chair-37 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 27%;
+  height: 32%;
+  top: 33%;
+  left: 12%;
+}
+
+.chair-38 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 27%;
+  height: 32%;
+  top: 33%;
+  left: 61%;
+}
+
+.row-3 {
+  height: 35%;
+  display: flex;
+}
+
+.row-3a {
+  position: relative;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-12 {
+  height: 50%;
+  width: 75%;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.chair-39 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 62%;
+  left: 23%;
+}
+
+.chair-40 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 62%;
+  left: 56%;
+}
+
+.chair-41 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 12%;
+  left: 56%;
+}
+
+.chair-42 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 12%;
+  left: 23%;
+}
+
+.row-3b {
+  position: relative;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-13 {
+  height: 50%;
+  width: 75%;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.chair-43 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 62%;
+  left: 23%;
+}
+
+.chair-44 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 62%;
+  left: 56%;
+}
+
+.chair-45 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 12%;
+  left: 56%;
+}
+
+.chair-46 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 12%;
+  left: 23%;
+}
+
+.row-3c {
+  position: relative;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-14 {
+  height: 50%;
+  width: 75%;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.chair-47 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 62%;
+  left: 23%;
+}
+
+.chair-48 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 62%;
+  left: 56%;
+}
+
+.chair-49 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 12%;
+  left: 56%;
+}
+
+.chair-50 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 12%;
+  left: 23%;
+}
+
+.row-3d {
+  position: relative;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-15 {
+  height: 50%;
+  width: 75%;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.chair-51 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 62%;
+  left: 23%;
+}
+
+.chair-52 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 62%;
+  left: 56%;
+}
+
+.chair-53 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 12%;
+  left: 56%;
+}
+
+.chair-54 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 22%;
+  height: 27%;
+  top: 12%;
+  left: 23%;
+}
+
+.column-3 {
+  position: relative;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.column-3a {
+  position: relative;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-16 {
+  height: 80%;
+  width: 55%;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.chair-55 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 12.5%;
+  top: 15%;
+  left: 10%;
+}
+
+.chair-56 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 12.5%;
+  top: 33.5%;
+  left: 10%;
+}
+
+.chair-57 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 12.5%;
+  top: 53.5%;
+  left: 10%;
+}
+
+.chair-58 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 12.5%;
+  top: 72.5%;
+  left: 10%;
+}
+
+.chair-59 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 12.5%;
+  top: 15%;
+  left: 64%;
+}
+
+.chair-60 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 12.5%;
+  top: 33.5%;
+  left: 64%;
+}
+
+.chair-61 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 12.5%;
+  top: 53.5%;
+  left: 64%;
+}
+
+.chair-62 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 12.5%;
+  top: 72.5%;
+  left: 64%;
+}
+
+.column-3b {
+  position: relative;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-17 {
+  height: 55%;
+  width: 55%;
+  background: rgba(255, 255, 255, 0.116);
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.chair-63 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top: 37.5%;
+  left: 10%;
+}
+
+.chair-64 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top: 10%;
+  left: 37.5%;
+}
+
+.chair-65 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top: 37.5%;
+  left: 65%;
+}
+
+.chair-66 {
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top: 65%;
+  left: 37.5%;
+}
+
+.chair {
+  background-color: grey;
+}
+
+.small-table,
+.medium-table,
+.large-table {
+  border-left: 4px solid green;
+}
+
+/* --------- TABLE DETAILS --------- */
+
+.table {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-number {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.table-reserve-name {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 0.3rem;
+  padding: 0.5rem;
+  color: white;
+}
+
+.table-reserve-name label {
+  font-size: 0.7rem;
+}
+
+.inline-container {
+  display: flex;
+  width: 100%;
+  gap: 0.3rem;
+  overflow: hidden;
+}
+
+.inline-container i,
+.inline-container label {
+  font-size: 0.7rem;
+}
+
+.inline-container label {
+  white-space: nowrap;
+  overflow: hidden;
+}
