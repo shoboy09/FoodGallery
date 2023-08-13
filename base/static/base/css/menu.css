@@ -42,7 +42,7 @@
 
 .menu-category-container {
   margin-top: auto;
-  width: 100%;
+  width: 80%;
   height: 18%;
   display: flex;
   justify-content: center;
@@ -89,52 +89,7 @@
   justify-content: center;
 }
 
-.coffee-category {
-  width: 90%;
-  height: 100%;
-  display: none;
-  justify-content: space-between;
-}
-
-.espresso-div,
-.iced-div {
-  width: 48%;
-  display: flex;
-  flex-direction: column;
-}
-
-.espresso,
-.iced {
-  border-bottom: 4px solid rgb(235, 144, 17);
-  border-radius: 3px;
-  padding: 0.5rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.7rem;
-  font-weight: 800;
-  color: rgb(235, 144, 17);
-}
-
-.espresso-items-div,
-.iced-items-div {
-  display: flex;
-  flex-direction: column;
-  padding: 1.2rem 3rem;
-  gap: 1rem;
-}
-
-.espresso-item,
-.iced-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgb(180, 180, 180);
-  padding: 0.5rem 0;
-  font-size: 1.2rem;
-}
-
-.lunch-category {
+#categoryClass {
   width: 90%;
   height: 100%;
   padding: 0 4rem;
@@ -144,39 +99,13 @@
   gap: 1rem;
 }
 
-.lunch-item {
-  width: 40%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgb(180, 180, 180);
-  padding: 0.5rem 0;
-  font-size: 1.2rem;
-}
-
-.dinner-category {
-  width: 90%;
-  height: 100%;
-  padding: 0 4rem;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.salad-div,
-.appetizer-div,
-.main-div,
-.dessert-div {
+.category-div {
   width: 45%;
   display: flex;
   flex-direction: column;
 }
 
-.salad,
-.appetizer,
-.main-label,
-.dessert {
+.category-item {
   border-bottom: 4px solid rgb(235, 144, 17);
   border-radius: 3px;
   padding: 0.5rem 0;
@@ -188,53 +117,18 @@
   color: rgb(235, 144, 17);
 }
 
-.salad-items-div,
-.appetizer-items-div,
-.main-items-div,
-.dessert-items-div {
+.items-div {
   display: flex;
   flex-direction: column;
   padding: 1.2rem 3rem;
   gap: 1rem;
 }
 
-.salad-item,
-.appetizer-item,
-.main-item,
-.dessert-item {
+.item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgb(180, 180, 180);
   padding: 0.5rem 0;
   font-size: 1.2rem;
-}
-
-.drink-category {
-  width: 90%;
-  height: 100%;
-  padding: 0 4rem;
-  display: none;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.drink-item {
-  width: 40%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgb(180, 180, 180);
-  padding: 0.5rem 0;
-  font-size: 1.2rem;
-}
-
-.price {
-  border: none;
-  border-radius: 3px;
-  background-color: rgb(250, 171, 60);
-  color: white;
-  padding: 0.3rem;
-  font-weight: 600;
 }
